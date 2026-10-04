@@ -5,24 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prevenção do HIV-SIDA</title>
   <meta name="description" content="Projecto sobre prevenção de doenças: HIV-SIDA. Definição, objectivos, planeamento e produção.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="faixa">
-  <div class="wrap faixa-int">
-    <span>Projecto sobre prevenção de doenças</span>
-    <span>1 de Dezembro: Dia Mundial de Luta contra a SIDA</span>
-  </div>
-</div>
-
 <header class="topo">
-  <nav>
-    <a class="logo" href="#inicio">
-      <span class="marca" aria-hidden="true"></span>
+  <nav class="topo-int">
+    <a class="logo" href="#inicio" aria-label="Fita Vermelha, início">
+      <svg class="logo-laco" viewBox="0 0 200 260" aria-hidden="true">
+        <path d="M52 238C80 190 120 150 134 100C146 56 128 26 100 26C72 26 54 56 66 100C80 150 120 190 148 238" />
+      </svg>
       <span class="logo-texto"><strong>Fita Vermelha</strong><small>Prevenção do HIV-SIDA</small></span>
     </a>
-    <ul>
+    <ul class="menu">
       <li><a href="#definicao">Definição</a></li>
       <li><a href="#prevencao">Prevenção</a></li>
       <li><a href="#objectivos">Objectivos</a></li>
@@ -34,134 +33,141 @@
 
 <main>
   <section id="inicio" class="hero">
+    <svg class="hero-laco" viewBox="0 0 200 260" aria-hidden="true">
+      <path d="M52 238C80 190 120 150 134 100C146 56 128 26 100 26C72 26 54 56 66 100C80 150 120 190 148 238" />
+    </svg>
     <div class="wrap hero-int">
-      <span class="fita" aria-hidden="true"></span>
-      <p class="etiqueta">Projecto sobre prevenção de doenças</p>
       <h1>HIV-SIDA: informação que protege vidas</h1>
-      <p class="lead">Conhecer a doença é o primeiro passo para a prevenir. Este projecto reúne o que é o HIV, como se previne e o que fazemos para levar essa informação à comunidade.</p>
+      <p class="hero-texto">Conhecer a doença é o primeiro passo para a prevenir. Aqui explicamos o que é o HIV, como se previne e como este projecto leva essa informação à comunidade.</p>
       <div class="botoes">
-        <a class="btn" href="#definicao">Começar</a>
-        <a class="btn btn-sec" href="#prevencao">Como prevenir</a>
+        <a class="btn btn-claro" href="#definicao">Começar a ler</a>
+        <a class="btn btn-linha" href="#prevencao">Como prevenir</a>
       </div>
-      <ul class="pilares">
-        <li><b>Informar</b><span>Saber o que é o HIV e como se transmite.</span></li>
-        <li><b>Prevenir</b><span>Preservativo, teste e material seguro.</span></li>
-        <li><b>Cuidar</b><span>Tratamento e apoio, sem estigma.</span></li>
-      </ul>
+      <p class="hero-data">Todos os anos, a 1 de Dezembro, assinala-se o Dia Mundial de Luta contra a SIDA.</p>
     </div>
   </section>
 
+  <div class="padrao" aria-hidden="true"></div>
+
   <section id="definicao" class="bloco">
     <div class="wrap">
-      <span class="num">1º</span>
+      <p class="passo-tema">Parte 1</p>
       <h2>Definição</h2>
-      <div class="grid dois">
-        <article class="cartao">
-          <h3>O que é o HIV?</h3>
-          <p>HIV é a sigla de <strong>Vírus da Imunodeficiência Humana</strong>. É um vírus que ataca o sistema imunitário, em especial as células CD4, que ajudam o corpo a combater infecções.</p>
+
+      <div class="termos">
+        <article class="termo">
+          <p class="sigla">HIV</p>
+          <div>
+            <h3>Vírus da Imunodeficiência Humana</h3>
+            <p>Vírus que ataca o sistema imunitário, em especial as células CD4, que ajudam o corpo a combater infecções.</p>
+          </div>
         </article>
-        <article class="cartao">
-          <h3>O que é a SIDA?</h3>
-          <p>SIDA significa <strong>Síndrome da Imunodeficiência Adquirida</strong>. É a fase mais avançada da infecção pelo HIV, quando o sistema imunitário está muito enfraquecido. Com tratamento adequado, muitas pessoas com HIV nunca chegam a esta fase.</p>
+        <article class="termo">
+          <p class="sigla">SIDA</p>
+          <div>
+            <h3>Síndrome da Imunodeficiência Adquirida</h3>
+            <p>Fase mais avançada da infecção pelo HIV, quando o sistema imunitário está muito enfraquecido. Com tratamento adequado, muitas pessoas com HIV nunca chegam a esta fase.</p>
+          </div>
         </article>
       </div>
 
       <h3 class="sub">Como se transmite</h3>
-      <div class="grid tres">
-        <div class="mini"><strong>Relações sexuais</strong> sem preservativo com uma pessoa infectada.</div>
-        <div class="mini"><strong>Sangue</strong>: partilha de agulhas, seringas ou objectos cortantes não esterilizados, e transfusões sem controlo.</div>
-        <div class="mini"><strong>De mãe para filho</strong>: durante a gravidez, o parto ou a amamentação, se não houver acompanhamento.</div>
-      </div>
+      <ul class="regras">
+        <li><strong>Relações sexuais</strong> sem preservativo com uma pessoa infectada.</li>
+        <li><strong>Sangue:</strong> partilha de agulhas, seringas ou objectos cortantes não esterilizados, e transfusões sem controlo.</li>
+        <li><strong>De mãe para filho:</strong> durante a gravidez, o parto ou a amamentação, se não houver acompanhamento.</li>
+      </ul>
 
-      <h3 class="sub">Como NÃO se transmite</h3>
-      <p class="nota">O HIV não se transmite por abraços, apertos de mão, beijos no rosto, partilha de pratos, copos ou casa de banho, nem por mosquitos. Discriminar quem vive com HIV não protege ninguém e prejudica a prevenção.</p>
+      <h3 class="sub">Como não se transmite</h3>
+      <p class="aviso">O HIV não se transmite por abraços, apertos de mão, beijos no rosto, partilha de pratos, copos ou casa de banho, nem por mosquitos. Discriminar quem vive com HIV não protege ninguém e prejudica a prevenção.</p>
     </div>
   </section>
 
-  <section id="prevencao" class="bloco claro">
+  <section id="prevencao" class="bloco bloco-frio">
     <div class="wrap">
       <h2>Como prevenir</h2>
-      <div class="grid tres">
-        <article class="cartao">
+      <ul class="medidas">
+        <li>
           <h3>Preservativo</h3>
           <p>Usar sempre e correctamente em todas as relações sexuais.</p>
-        </article>
-        <article class="cartao">
+        </li>
+        <li>
           <h3>Testagem regular</h3>
-          <p>Fazer o teste de HIV periodicamente e conhecer o seu estado. O teste é rápido e está disponível nas unidades sanitárias.</p>
-        </article>
-        <article class="cartao">
+          <p>Fazer o teste periodicamente e conhecer o seu estado. É rápido e está disponível nas unidades sanitárias.</p>
+        </li>
+        <li>
           <h3>Tratamento (TARV)</h3>
           <p>O tratamento antirretroviral controla o vírus, mantém a pessoa saudável e reduz muito o risco de transmissão.</p>
-        </article>
-        <article class="cartao">
+        </li>
+        <li>
           <h3>Material seguro</h3>
           <p>Nunca partilhar agulhas, lâminas ou objectos cortantes. Exigir material esterilizado.</p>
-        </article>
-        <article class="cartao">
+        </li>
+        <li>
           <h3>Acompanhamento na gravidez</h3>
-          <p>Mulheres grávidas devem fazer consultas pré-natais e o teste, para proteger o bebé.</p>
-        </article>
-        <article class="cartao">
+          <p>Mulheres grávidas devem fazer as consultas pré-natais e o teste, para proteger o bebé.</p>
+        </li>
+        <li>
           <h3>Informação e diálogo</h3>
           <p>Conversar abertamente em família, na escola e na comunidade, sem medo nem estigma.</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <section id="objectivos" class="bloco">
     <div class="wrap">
-      <span class="num">2º</span>
+      <p class="passo-tema">Parte 2</p>
       <h2>Objectivos</h2>
-      <h3 class="sub">Objectivo geral</h3>
-      <p>Contribuir para a redução de novas infecções por HIV através da sensibilização e educação da comunidade.</p>
+
+      <p class="geral">Contribuir para a redução de novas infecções por HIV através da sensibilização e educação da comunidade.</p>
 
       <h3 class="sub">Objectivos específicos</h3>
-      <ol class="lista">
+      <ul class="lista-simples">
         <li>Explicar o que são o HIV e a SIDA em linguagem simples e acessível.</li>
         <li>Divulgar as formas de transmissão e, sobretudo, as formas de prevenção.</li>
         <li>Incentivar a testagem e o início precoce do tratamento.</li>
         <li>Combater o estigma e a discriminação contra pessoas que vivem com HIV.</li>
         <li>Orientar onde procurar apoio e serviços de saúde.</li>
-      </ol>
+      </ul>
     </div>
   </section>
 
-  <section id="planeamento" class="bloco claro">
+  <section id="planeamento" class="bloco bloco-frio">
     <div class="wrap">
-      <span class="num">3º</span>
+      <p class="passo-tema">Parte 3</p>
       <h2>Planeamento e produção</h2>
-      <p class="lead2">Etapas previstas para realizar o projecto, da ideia ao produto final.</p>
+      <p class="intro">Etapas previstas para realizar o projecto, da ideia ao produto final.</p>
 
-      <div class="linha">
-        <div class="passo"><b>Etapa 1</b><h3>Pesquisa</h3><p>Recolher informação fiável em fontes de saúde oficiais.</p></div>
-        <div class="passo"><b>Etapa 2</b><h3>Planeamento</h3><p>Definir público-alvo, mensagens, tarefas e responsáveis.</p></div>
-        <div class="passo"><b>Etapa 3</b><h3>Produção</h3><p>Criar os materiais: textos, cartazes, apresentação e este site.</p></div>
-        <div class="passo"><b>Etapa 4</b><h3>Divulgação</h3><p>Apresentar à turma, escola e comunidade.</p></div>
-        <div class="passo"><b>Etapa 5</b><h3>Avaliação</h3><p>Recolher opiniões e verificar se os objectivos foram atingidos.</p></div>
-      </div>
+      <ol class="etapas">
+        <li><h3>Pesquisa</h3><p>Recolher informação fiável em fontes de saúde oficiais.</p></li>
+        <li><h3>Planeamento</h3><p>Definir público-alvo, mensagens, tarefas e responsáveis.</p></li>
+        <li><h3>Produção</h3><p>Criar os materiais: textos, cartazes, apresentação e este site.</p></li>
+        <li><h3>Divulgação</h3><p>Apresentar à turma, à escola e à comunidade.</p></li>
+        <li><h3>Avaliação</h3><p>Recolher opiniões e verificar se os objectivos foram atingidos.</p></li>
+      </ol>
 
       <h3 class="sub">Recursos necessários</h3>
-      <div class="grid tres">
-        <div class="mini"><strong>Humanos:</strong> equipa do projecto, professor orientador, profissional de saúde convidado.</div>
-        <div class="mini"><strong>Materiais:</strong> computador, papel, material gráfico, projector.</div>
-        <div class="mini"><strong>Informação:</strong> manuais e sítios oficiais do Ministério da Saúde e da OMS.</div>
-      </div>
+      <dl class="recursos">
+        <div><dt>Humanos</dt><dd>Equipa do projecto, professor orientador e um profissional de saúde convidado.</dd></div>
+        <div><dt>Materiais</dt><dd>Computador, papel, material gráfico e projector.</dd></div>
+        <div><dt>Informação</dt><dd>Manuais e sítios oficiais do Ministério da Saúde e da OMS.</dd></div>
+      </dl>
     </div>
   </section>
 
   <section id="ajuda" class="bloco">
     <div class="wrap">
       <h2>Onde buscar ajuda</h2>
-      <p>Procure a <strong>unidade sanitária mais próxima</strong> para fazer o teste de HIV, receber aconselhamento e, se necessário, iniciar o tratamento. O atendimento é confidencial. Também pode falar com um professor, enfermeiro ou activista da sua comunidade.</p>
-      <p class="nota">Este site é educativo e não substitui a consulta médica.</p>
+      <p class="ajuda-texto">Procure a <strong>unidade sanitária mais próxima</strong> para fazer o teste de HIV, receber aconselhamento e, se for preciso, iniciar o tratamento. O atendimento é confidencial. Também pode falar com um professor, um enfermeiro ou um activista da sua comunidade.</p>
+      <p class="aviso aviso-suave">Este site é educativo e não substitui a consulta médica.</p>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Projecto sobre prevenção de doenças: HIV-SIDA &middot; <span id="ano"></span></p>
+  <div class="padrao padrao-rodape" aria-hidden="true"></div>
+  <p>Projecto sobre prevenção de doenças: HIV-SIDA &copy; <span id="ano"></span></p>
 </footer>
 
 <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
