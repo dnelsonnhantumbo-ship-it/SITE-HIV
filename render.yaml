@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hiv-sida-site
+    runtime: static
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
